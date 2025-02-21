@@ -18,6 +18,10 @@
 <meta name="theme-color" content="#F26B38">
 </head>
 <body>
+  <audio id="bg-music" autoplay>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+  
 <br>
 <br>
 <br>
@@ -65,5 +69,10 @@
 </div>
 </div>
 <script  src="js/index.js"></script>
+<script>
+  document.addEventListener("click", function() {
+    document.getElementById("bg-music").play();
+  }, { once: true });
+</script>
 </body>
 </html>
